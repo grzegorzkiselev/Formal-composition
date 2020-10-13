@@ -330,13 +330,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
 } */
 
-.header > .navigtion-circles {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  background-color: blue;
-  margin: auto;
-}
+
 
 .content-wrapper {
   padding-top: 0;
@@ -345,64 +339,75 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
 }
 
-.opener {
-  padding: 0 44px;
-  border: 1px solid red;
-}
-
-
-.content-wrapper img {
-  max-width: 100%;
-  width: 100%;
-}
+/* ? HEADER */
 
 .header {
-  padding: 0 44px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0;
   height: 96px;
   background-color: green;
 }
 
-.button {
-  background-color: red;
-  margin-right: 10px;
+.navigation-circles {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: blue;
 }
 
-img {
-    padding: 0;
-    margin: 0;
+.navigation-circles__button {
+    background-color: red;
+    margin-right: 10px;
+  }
+
+.all-events {
+  height: 48px;
+  width: 216px;
+  background-color: pink;
 }
+
+/* ! доразобраться с шрифтом */
+
+.all-events > span {
+  font-family: "Repro";
+  margin: auto;
+  font-size: 40px;
+}
+
+
+/* ? OPENER */
 
 h1 {
     font-family: "Repro Outline";
-    --fm-capitalHeight: .7;
-    --fm-x-height: .53;
-    --fm-emSquare: 1;
-    --fm-descender: 0.16;
-    --fm-ascender: 0.84;
-    --fm-linegap: 0;
+    --fm-capitalHeight-h1: .7;
+    --fm-x-height-h1: .53;
+    --fm-emSquare-h1: 1;
+    --fm-descender-h1: 0.16;
+    --fm-ascender-h1: 0.84;
+    --fm-linegap-h1: 0;
     
-    /* desired capital height and line-height */
-    --capital-height: 48;
-    --line-height: 1;
 
-    --lineheightNormal: (var(--fm-ascender) + var(--fm-descender) + var(--fm-linegap));
-    --distanceBottom: (var(--fm-descender));
-    --distanceTop: (var(--fm-ascender) - var(--fm-x-height));
-    --computedFontSize: (var(--capital-height) / var(--fm-x-height));
-    --valign: ((var(--distanceBottom) - var(--distanceTop)) * var(--computedFontSize));  
-    --computedLineheight: ((var(--line-height) * var(--capital-height)) - var(--valign));
-    --contentArea: (var(--lineheightNormal) * var(--computedFontSize));
+    --capital-height-h1: 48;
+    --line-height-h1: 1;
 
-  /* set capital height to equal font-size */
-    font-size: calc(var(--computedFontSize) * 1px);
+    --lineheightNormal-h1: (var(--fm-ascender-h1) + var(--fm-descender-h1) + var(--fm-linegap-h1));
+    --distanceBottom-h1: (var(--fm-descender-h1));
+    --distanceTop-h1: (var(--fm-ascender-h1) - var(--fm-x-height-h1));
+    --computedFontSize-h1: (var(--capital-height-h1) / var(--fm-x-height-h1));
+    --valign-h1: ((var(--distanceBottom-h1) - var(--distanceTop-h1)) * var(--computedFontSize-h1));  
+    --computedLineheight-h1: ((var(--line-height-h1) * var(--capital-height-h1)) - var(--valign-h1));
+    --contentArea-h1: (var(--lineheightNormal-h1) * var(--computedFontSize-h1));
 
-  /* set computed line-height */
-    line-height: calc(var(--computedLineheight) * 1px);
+    font-size: calc(var(--computedFontSize-h1) * 1px);
 
-    /* --x-height-corrector: calc((var(--fm-capitalHeight) - var(--fm-x-height)) * 1px); */
+/* set computed line-height */
+    line-height: calc(var(--computedLineheight-h1) * 1px);
 
-    margin-top: calc(96px - ((var(--fm-capitalHeight) - var(--fm-x-height)) * 100px));
+/* --x-height-corrector: calc((var(--fm-capitalHeight) - var(--fm-x-height)) * 1px); */
 
+    margin-top: calc(24px - ((var(--fm-capitalHeight-h1) - var(--fm-x-height-h1)) * var(--computedFontSize-h1) * 1px));
 }
 
 h2 {  
@@ -414,39 +419,219 @@ h2 {
 }
 
 h3 {
-    font-family: "NF";
-    color: #262626;
+  color: #262626;
+  font-family: "NF";
+    --fm-capitalHeight-h3: .7;
+    --fm-x-height-h3: .53;
+    --fm-emSquare-h3: 1;
+    --fm-descender-h3: 0.16;
+    --fm-ascender-h3: 0.84;
+    --fm-linegap-h3: 0;
+    
 
-    --fm-capitalHeight: .7;
-    --fm-x-height: .53;
-    --fm-emSquare: 1;
-    --fm-descender: 0.16;
-    --fm-ascender: 0.84;
-    --fm-linegap: 0;
+    --capital-height-h3: 48;
+    --line-height-h3: 1;
+
+    --lineheightNormal-h3: (var(--fm-ascender-h3) + var(--fm-descender-h3) + var(--fm-linegap-h3));
+    --distanceBottom-h3: (var(--fm-descender-h3));
+    --distanceTop-h3: (var(--fm-ascender-h3) - var(--fm-x-height-h3));
+    --computedFontSize-h3: (var(--capital-height-h3) / var(--fm-x-height-h3));
+    --valign-h3: ((var(--distanceBottom-h3) - var(--distanceTop-h3)) * var(--computedFontSize-h3));  
+    --computedLineheight-h3: ((var(--line-height-h3) * var(--capital-height-h3)) - var(--valign-h3));
+    --contentArea-h3: (var(--lineheightNormal-h3) * var(--computedFontSize-h3));
+
+    font-size: calc(var(--computedFontSize-h3) * 1px);
+
+/* set computed line-height */
+    line-height: calc(var(--computedLineheight-h3) * 1px);
+
+/* --x-height-corrector: calc((var(--fm-capitalHeight) - var(--fm-x-height)) * 1px); */
+
+    margin-top: calc((-1 * ((var(--fm-capitalHeight-h3) - var(--fm-x-height-h3)) * var(--computedFontSize-h3) * 1px)) + 24px);
+}
+
+.process p {
+    font-family: "Repro";
+
+    --fm-capitalHeight-process: .7;
+    --fm-x-height-process: .53;
+    --fm-emSquare-process: 1;
+    --fm-descender-process: 0.16;
+    --fm-ascender-process: 0.84;
+    --fm-linegap-process: 0;
     
     /* desired capital height and line-height */
-    --capital-height: 48;
-    --line-height: 1;
+    --capital-height-process: 7;
+    --line-height-process: 2;
 
-    --lineheightNormal: (var(--fm-ascender) + var(--fm-descender) + var(--fm-linegap));
-    --distanceBottom: (var(--fm-descender));
-    --distanceTop: (var(--fm-ascender) - var(--fm-x-height));
-    --computedFontSize: (var(--capital-height) / var(--fm-x-height));
-    --valign: ((var(--distanceBottom) - var(--distanceTop)) * var(--computedFontSize));  
-    --computedLineheight: ((var(--line-height) * var(--capital-height)) - var(--valign));
-    --contentArea: (var(--lineheightNormal) * var(--computedFontSize));
+    --lineheightNormal-process: (var(--fm-ascender-process) + var(--fm-descender-process) + var(--fm-linegap-process));
+    --distanceBottom-process: (var(--fm-descender-process));
+    --distanceTop-process: (var(--fm-ascender-process) - var(--fm-x-height-process));
+    --computedFontSize-process: (var(--capital-height-process) / var(--fm-x-height-process));
+    --valign-process: ((var(--distanceBottom-process) - var(--distanceTop-process)) * var(--computedFontSize-process));  
+    --computedLineheight-process: ((var(--line-height-process) * var(--capital-height-process)) - var(--valign-process));
+    --contentArea-process: (var(--lineheightNormal-process) * var(--computedFontSize-process));
 
-  /* set capital height to equal font-size */
-    font-size: calc(var(--computedFontSize) * 1px);
+    font-size: calc(var(--computedFontSize-process) * 1px);
 
-  /* set computed line-height */
-    line-height: calc(var(--computedLineheight) * 1px);
+/* set computed line-height */
+    line-height: calc(var(--computedLineheight-process) * 1px);
 
-    /* --x-height-corrector: calc((var(--fm-capitalHeight) - var(--fm-x-height)) * 1px); */
-
-    margin-top: calc(25px - ((var(--fm-capitalHeight) - var(--fm-x-height)) * 100px));
-    margin-bottom: 49px;
+    margin-top: calc((-1 * ((var(--fm-capitalHeight-process) - var(--fm-x-height-process)) * var(--computedFontSize-process) * 1px)));
 }
+
+
+.theme p {
+    font-family: "Repro";
+
+    --fm-capitalHeight-theme: .7;
+    --fm-x-height-theme: .53;
+    --fm-emSquare-theme: 1;
+    --fm-descender-theme: 0.16;
+    --fm-ascender-theme: 0.84;
+    --fm-linegap-theme: 0;
+    
+
+    --capital-height-theme: 18;
+    --line-height-theme: 2;
+
+    --lineheightNormal-theme: (var(--fm-ascender-theme) + var(--fm-descender-theme) + var(--fm-linegap-theme));
+    --distanceBottom-theme: (var(--fm-descender-theme));
+    --distanceTop-theme: (var(--fm-ascender-theme) - var(--fm-x-height-theme));
+    --computedFontSize-theme: (var(--capital-height-theme) / var(--fm-x-height-theme));
+    --valign-theme: ((var(--distanceBottom-theme) - var(--distanceTop-theme)) * var(--computedFontSize-theme));  
+    --computedLineheight-theme: ((var(--line-height-theme) * var(--capital-height-theme)) - var(--valign-theme));
+    --contentArea-theme: (var(--lineheightNormal-theme) * var(--computedFontSize-theme));
+
+    font-size: calc(var(--computedFontSize-theme) * 1px);
+
+/* set computed line-height */
+    line-height: calc(var(--computedLineheight-theme) * 1px);
+
+/* --x-height-corrector: calc((var(--fm-capitalHeight) - var(--fm-x-height)) * 1px); */
+
+    margin-top: calc((-1 * ((var(--fm-capitalHeight-theme) - var(--fm-x-height-theme)) * var(--computedFontSize-theme) * 1px)));
+}
+
+
+.day p {
+    font-family: "NF";
+
+    --fm-capitalHeight-day: .7;
+    --fm-x-height-day: .53;
+    --fm-emSquare-day: 1;
+    --fm-descender-day: 0.16;
+    --fm-ascender-day: 0.84;
+    --fm-linegap-day: 0;
+    
+
+    --capital-height-day: 68;
+    --line-height-day: 1;
+
+    --lineheightNormal-day: (var(--fm-ascender-day) + var(--fm-descender-day) + var(--fm-linegap-day));
+    --distanceBottom-day: (var(--fm-descender-day));
+    --distanceTop-day: (var(--fm-ascender-day) - var(--fm-x-height-day));
+    --computedFontSize-day: (var(--capital-height-day) / var(--fm-x-height-day));
+    --valign-day: ((var(--distanceBottom-day) - var(--distanceTop-day)) * var(--computedFontSize-day));  
+    --computedLineheight-day: ((var(--line-height-day) * var(--capital-height-day)) - var(--valign-day));
+    --contentArea-day: (var(--lineheightNormal-day) * var(--computedFontSize-day));
+
+    font-size: calc(var(--computedFontSize-day) * 1px);
+
+/* set computed line-height */
+    line-height: calc(var(--computedLineheight-day) * 1px);
+
+/* --x-height-corrector: calc((var(--fm-capitalHeight) - var(--fm-x-height)) * 1px); */
+
+    margin-top: calc((-1 * ((var(--fm-capitalHeight-day) - var(--fm-x-height-day)) * var(--computedFontSize-day) * 1px)));
+}
+
+.goal p {
+    font-family: "Repro";
+
+    --fm-capitalHeight-goal: .7;
+    --fm-x-height-goal: .53;
+    --fm-emSquare-goal: 1;
+    --fm-descender-goal: 0.16;
+    --fm-ascender-goal: 0.84;
+    --fm-linegap-goal: 0;
+    
+
+    --capital-height-goal: 11;
+    --line-height-goal: 2;
+
+    --lineheightNormal-goal: (var(--fm-ascender-goal) + var(--fm-descender-goal) + var(--fm-linegap-goal));
+    --distanceBottom-goal: (var(--fm-descender-goal));
+    --distanceTop-goal: (var(--fm-ascender-goal) - var(--fm-x-height-goal));
+    --computedFontSize-goal: (var(--capital-height-goal) / var(--fm-x-height-goal));
+    --valign-goal: ((var(--distanceBottom-goal) - var(--distanceTop-goal)) * var(--computedFontSize-goal));  
+    --computedLineheight-goal: ((var(--line-height-goal) * var(--capital-height-goal)) - var(--valign-goal));
+    --contentArea-goal: (var(--lineheightNormal-goal) * var(--computedFontSize-goal));
+
+    font-size: calc(var(--computedFontSize-goal) * 1px);
+
+/* set computed line-height */
+    line-height: calc(var(--computedLineheight-goal) * 1px);
+
+/* --x-height-corrector: calc((var(--fm-capitalHeight) - var(--fm-x-height)) * 1px); */
+
+    margin-top: calc((-1 * ((var(--fm-capitalHeight-goal) - var(--fm-x-height-goal)) * var(--computedFontSize-goal) * 1px)));
+}
+
+
+.image-row {
+  margin-top: 48px;
+  display: grid;
+  grid-template-columns: 3% 1fr 3%;
+  overflow: hidden;
+  grid-template-rows: 672px;
+}
+
+.tab-line svg {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    color: #262626
+}
+
+.filler-9 {
+  display: grid;
+  grid-template-columns: 3% 1fr 3%;
+  grid-template-rows: 44px;
+  overflow: visible;
+}
+
+.table-head {
+  grid-template-rows: 72px;
+  z-index: 90;
+}
+
+.table-head p {
+  color: #262626;
+}
+
+
+/* ___ */
+
+
+
+img {
+    padding: 0;
+    margin: 0;
+}
+
+.content-wrapper img {
+  max-width: 100%;
+  width: 100%;
+}
+
+
+
+
+
+
+
+
 
 p {
     margin: 0;
@@ -461,25 +646,16 @@ p {
     overflow: visible;
 }
 
-.image-row {
-  display: grid;
-  grid-template-columns: 3% 1fr 3%;
-  overflow: visible;
-}
 
-.filler-9 {
-  display: grid;
-  grid-template-columns: 3% 1fr 3%;
-  grid-template-rows: 48px;
-  overflow: visible;
-}
+
+
 
 .first {  grid-template-rows: 600px;  }
 .second {  grid-template-rows: 504px;  }
 .thrid {  grid-template-rows: 768px;  }
 .filler {  grid-template-rows: 90px;  }
-.fourth { 
-    grid-template-columns: 44px 280px 24px 432px 1fr;
+.instruments-row { 
+    grid-template-columns: 3% 18% 10% 34% 1fr;
     grid-template-rows: 408px;
 }
 .filler-2 {  
@@ -489,137 +665,13 @@ p {
     margin-bottom: 24px;
 }
 
-.theme p {
-    font-family: "Repro";
 
-    --fm-capitalHeight: .7;
-    --fm-x-height: .53;
-    --fm-emSquare: 1;
-    --fm-descender: 0.16;
-    --fm-ascender: 0.84;
-    --fm-linegap: 0;
-    
-    /* desired capital height and line-height */
-    --capital-height: 20;
-    --line-height: 2;
 
-    --lineheightNormal: (var(--fm-ascender) + var(--fm-descender) + var(--fm-linegap));
-    --distanceBottom: (var(--fm-descender));
-    --distanceTop: (var(--fm-ascender) - var(--fm-x-height));
-    --computedFontSize: (var(--capital-height) / var(--fm-x-height));
-    --valign: ((var(--distanceBottom) - var(--distanceTop)) * var(--computedFontSize));  
-    --computedLineheight: ((var(--line-height) * var(--capital-height)) - var(--valign));
-    --contentArea: (var(--lineheightNormal) * var(--computedFontSize));
 
-  /* set capital height to equal font-size */
-    font-size: calc(var(--computedFontSize) * 1px);
 
-  /* set computed line-height */
-    line-height: calc(var(--computedLineheight) * 1px);
 
-    /* --x-height-corrector: calc((var(--fm-capitalHeight) - var(--fm-x-height)) * 1px); */
 
-    margin-top: calc((var(--fm-ascender) - var(--fm-x-height)) * -42px);
-}
 
-.day p {
-    font-family: "NF";
-
-    --fm-capitalHeight: .7;
-    --fm-x-height: .53;
-    --fm-emSquare: 1;
-    --fm-descender: 0.16;
-    --fm-ascender: 0.84;
-    --fm-linegap: 0;
-    
-    /* desired capital height and line-height */
-    --capital-height: 68;
-    --line-height: 2;
-
-    --lineheightNormal: (var(--fm-ascender) + var(--fm-descender) + var(--fm-linegap));
-    --distanceBottom: (var(--fm-descender));
-    --distanceTop: (var(--fm-ascender) - var(--fm-x-height));
-    --computedFontSize: (var(--capital-height) / var(--fm-x-height));
-    --valign: ((var(--distanceBottom) - var(--distanceTop)) * var(--computedFontSize));  
-    --computedLineheight: ((var(--line-height) * var(--capital-height)) - var(--valign));
-    --contentArea: (var(--lineheightNormal) * var(--computedFontSize));
-
-  /* set capital height to equal font-size */
-    font-size: calc(var(--computedFontSize) * 1px);
-
-  /* set computed line-height */
-    line-height: calc(var(--computedLineheight) * 1px);
-
-    /* --x-height-corrector: calc((var(--fm-capitalHeight) - var(--fm-x-height)) * 1px); */
-
-    margin-top: -50px;
-}
-
-.goal p {
-    font-family: "Repro";
-
-    --fm-capitalHeight: .7;
-    --fm-x-height: .53;
-    --fm-emSquare: 1;
-    --fm-descender: 0.16;
-    --fm-ascender: 0.84;
-    --fm-linegap: 0;
-    
-    /* desired capital height and line-height */
-    --capital-height: 11;
-    --line-height: 2;
-
-    --lineheightNormal: (var(--fm-ascender) + var(--fm-descender) + var(--fm-linegap));
-    --distanceBottom: (var(--fm-descender));
-    --distanceTop: (var(--fm-ascender) - var(--fm-x-height));
-    --computedFontSize: (var(--capital-height) / var(--fm-x-height));
-    --valign: ((var(--distanceBottom) - var(--distanceTop)) * var(--computedFontSize));  
-    --computedLineheight: ((var(--line-height) * var(--capital-height)) - var(--valign));
-    --contentArea: (var(--lineheightNormal) * var(--computedFontSize));
-
-  /* set capital height to equal font-size */
-    font-size: calc(var(--computedFontSize) * 1px);
-
-  /* set computed line-height */
-    line-height: calc(var(--computedLineheight) * 1px);
-
-    /* --x-height-corrector: calc((var(--fm-capitalHeight) - var(--fm-x-height)) * 1px); */
-
-    margin-top: calc((var(--fm-ascender) - var(--fm-x-height)) * -24px);
-}
-
-.process p {
-    font-family: "Repro";
-
-    --fm-capitalHeight: .7;
-    --fm-x-height: .53;
-    --fm-emSquare: 1;
-    --fm-descender: 0.16;
-    --fm-ascender: 0.84;
-    --fm-linegap: 0;
-    
-    /* desired capital height and line-height */
-    --capital-height: 7;
-    --line-height: 2;
-
-    --lineheightNormal: (var(--fm-ascender) + var(--fm-descender) + var(--fm-linegap));
-    --distanceBottom: (var(--fm-descender));
-    --distanceTop: (var(--fm-ascender) - var(--fm-x-height));
-    --computedFontSize: (var(--capital-height) / var(--fm-x-height));
-    --valign: ((var(--distanceBottom) - var(--distanceTop)) * var(--computedFontSize));  
-    --computedLineheight: ((var(--line-height) * var(--capital-height)) - var(--valign));
-    --contentArea: (var(--lineheightNormal) * var(--computedFontSize));
-
-  /* set capital height to equal font-size */
-    font-size: calc(var(--computedFontSize) * 1px);
-
-  /* set computed line-height */
-    line-height: calc(var(--computedLineheight) * 1px);
-
-    /* --x-height-corrector: calc((var(--fm-capitalHeight) - var(--fm-x-height)) * 1px); */
-
-    margin-top: calc((var(--fm-ascender) - var(--fm-x-height)) * -10px);
-}
 
 .process ul {
     list-style: none;
@@ -736,12 +788,7 @@ p {
     margin-top: calc((var(--fm-ascender) - var(--fm-x-height)) * -10px);
 }
 
-.tab-line svg {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    color: #262626
-}
+
 
 ul {  list-style: none  }
 
@@ -784,4 +831,25 @@ footer p {
     /* --x-height-corrector: calc((var(--fm-capitalHeight) - var(--fm-x-height)) * 1px); */
 
     margin-top: calc((var(--fm-ascender) - var(--fm-x-height)) * -26px);
+}
+
+
+
+
+.register {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  background-color: #262626;
+}
+
+.information {
+  width: 50%;
+  height: 100%;
+  background-color: green;
+}
+.vidget {
+  width: 50%;
+  background-color: red;
+  padding-top: 48px;
 }
