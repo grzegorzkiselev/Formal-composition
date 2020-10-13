@@ -345,7 +345,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 0;
+  padding: 0 3% 0;
   height: 96px;
   background-color: green;
 }
@@ -361,6 +361,16 @@ h1, h2, h3, h4, h5, h6 {
     background-color: red;
     margin-right: 10px;
   }
+
+.navigation-circles__button > svg {
+  fill: #262626;
+  transition: 0.2s ease;
+}
+
+.navigation-circles__button > svg:hover {
+  fill: #F0EADC;
+  transition: 0.2s ease;
+}
 
 .all-events {
   height: 48px;
@@ -378,6 +388,10 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /* ? OPENER */
+
+.opener {
+  padding: 0 3% 0;
+}
 
 h1 {
     font-family: "Repro Outline";
