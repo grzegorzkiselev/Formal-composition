@@ -314,7 +314,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
-    border: 1px solid pink;
+    /* border: 1px solid pink; */
 }
 
 :root {
@@ -390,7 +390,7 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   padding: 0 3% 0;
   height: 96px;
-  background-color: green;
+  /* background-color: green; */
 }
 
 .navigation-circles {
@@ -411,6 +411,7 @@ h1, h2, h3, h4, h5, h6 {
 .navigation-circles__button > svg:hover {
   fill: #F0EADC;
   transition: 0.2s ease;
+  cursor: pointer;
 }
 
 .all-events {
