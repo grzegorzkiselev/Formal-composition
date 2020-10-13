@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="l.ss01" format="2">
+  <advance width="204"/>
+  <outline>
+    <contour>
+      <point x="50" y="0" type="line"/>
+      <point x="50" y="711" type="line"/>
+      <point x="169" y="711" type="line"/>
+      <point x="169" y="0" type="line"/>
+    </contour>
+    <contour>
+      <point x="73" y="22" type="line"/>
+      <point x="146" y="22" type="line"/>
+      <point x="146" y="689" type="line"/>
+      <point x="73" y="689" type="line"/>
+    </contour>
+  </outline>
+</glyph>

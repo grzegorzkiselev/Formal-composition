@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Edieresis" format="2">
+  <advance width="639"/>
+  <unicode hex="00CB"/>
+  <outline>
+    <contour>
+      <point x="167" y="766" type="line"/>
+      <point x="167" y="904" type="line"/>
+      <point x="309" y="904" type="line"/>
+      <point x="309" y="766" type="line"/>
+    </contour>
+    <contour>
+      <point x="356" y="766" type="line"/>
+      <point x="356" y="904" type="line"/>
+      <point x="498" y="904" type="line"/>
+      <point x="498" y="766" type="line"/>
+    </contour>
+    <contour>
+      <point x="190" y="788" type="line"/>
+      <point x="286" y="788" type="line"/>
+      <point x="286" y="882" type="line"/>
+      <point x="190" y="882" type="line"/>
+    </contour>
+    <contour>
+      <point x="379" y="788" type="line"/>
+      <point x="475" y="788" type="line"/>
+      <point x="475" y="882" type="line"/>
+      <point x="379" y="882" type="line"/>
+    </contour>
+    <contour>
+      <point x="60" y="0" type="line"/>
+      <point x="60" y="700" type="line"/>
+      <point x="581" y="700" type="line"/>
+      <point x="581" y="592" type="line"/>
+      <point x="183" y="592" type="line"/>
+      <point x="183" y="441" type="line"/>
+      <point x="562" y="441" type="line"/>
+      <point x="562" y="335" type="line"/>
+      <point x="183" y="335" type="line"/>
+      <point x="183" y="108" type="line"/>
+      <point x="589" y="108" type="line"/>
+      <point x="589" y="0" type="line"/>
+    </contour>
+    <contour>
+      <point x="83" y="22" type="line"/>
+      <point x="566" y="22" type="line"/>
+      <point x="566" y="86" type="line"/>
+      <point x="160" y="86" type="line"/>
+      <point x="160" y="357" type="line"/>
+      <point x="539" y="357" type="line"/>
+      <point x="539" y="419" type="line"/>
+      <point x="160" y="419" type="line"/>
+      <point x="160" y="614" type="line"/>
+      <point x="558" y="614" type="line"/>
+      <point x="558" y="678" type="line"/>
+      <point x="83" y="678" type="line"/>
+    </contour>
+  </outline>
+</glyph>

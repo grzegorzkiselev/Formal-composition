@@ -1,0 +1,787 @@
+/* цветовая схема */
+/* синий — #06418C */
+/* белый — #F0EADC */
+/* черный — #262626 */
+
+@font-face {
+    font-family: "Repro";
+    src: url(../fonts/Repro.woff);
+}
+@font-face {
+    font-family: "Repro Outline";
+    /* src: url(../fonts/Repro\ Outline-2.woff); */
+    src: url(../fonts/Repro\ Outline-Regular-web.otf);
+}
+@font-face {
+    font-family: "NF";
+    src: url(../fonts/NF.woff);
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 0;
+  }
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    color: #F0EADC;
+    margin: 0;
+}
+
+body {  
+    padding: 0;
+    margin: 0;
+    background-color: #06418C;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    border: 1px solid pink;
+}
+
+:root {
+    --micromodule: 24px;
+    --page-column-width: 128px;
+    --page-margin: 44px;
+}
+
+.rows {  
+    position: absolute;
+    width: 100%;
+}
+
+.grid-row {
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: red;
+    opacity: 1;
+}
+
+.row-1 {  top: var(--micromodule)  }
+.row-2 {  top: calc(var(--micromodule) * 2)  }
+.row-3 {  top: calc(var(--micromodule) * 3)  }
+.row-4 {  top: calc(var(--micromodule) * 4)  }
+.row-5 {  top: calc(var(--micromodule) * 5)  }
+.row-6 {  top: calc(var(--micromodule) * 6)  }
+.row-7 {  top: calc(var(--micromodule) * 7)  }
+.row-8 {  top: calc(var(--micromodule) * 8)  }
+.row-9 {  top: calc(var(--micromodule) * 9)  }
+.row-10 {  top: calc(var(--micromodule) * 10)  }
+.row-11 {  top: calc(var(--micromodule) * 11)  }
+.row-12 {  top: calc(var(--micromodule) * 12)  }
+.row-13 {  top: calc(var(--micromodule) * 13)  }
+.row-14 {  top: calc(var(--micromodule) * 14)  }
+.row-15 {  top: calc(var(--micromodule) * 15)  }
+.row-16 {  top: calc(var(--micromodule) * 16)  }
+.row-17 {  top: calc(var(--micromodule) * 17)  }
+.row-18 {  top: calc(var(--micromodule) * 18)  }
+.row-19 {  top: calc(var(--micromodule) * 19)  }
+.row-20 {  top: calc(var(--micromodule) * 20)  }
+.row-21 {  top: calc(var(--micromodule) * 21)  }
+.row-22 {  top: calc(var(--micromodule) * 22)  }
+.row-23 {  top: calc(var(--micromodule) * 23)  }
+.row-24 {  top: calc(var(--micromodule) * 24)  }
+.row-25 {  top: calc(var(--micromodule) * 25)  }
+.row-26 {  top: calc(var(--micromodule) * 26)  }
+.row-27 {  top: calc(var(--micromodule) * 27)  }
+.row-28 {  top: calc(var(--micromodule) * 28)  }
+.row-29 {  top: calc(var(--micromodule) * 29)  }
+.row-30 {  top: calc(var(--micromodule) * 30)  }
+.row-31 {  top: calc(var(--micromodule) * 31)  }
+.row-32 {  top: calc(var(--micromodule) * 32)  }
+.row-33 {  top: calc(var(--micromodule) * 33)  }
+.row-34 {  top: calc(var(--micromodule) * 34)  }
+.row-35 {  top: calc(var(--micromodule) * 35)  }
+.row-36 {  top: calc(var(--micromodule) * 36)  }
+.row-37 {  top: calc(var(--micromodule) * 37)  }
+.row-38 {  top: calc(var(--micromodule) * 38)  }
+.row-39 {  top: calc(var(--micromodule) * 39)  }
+.row-40 {  top: calc(var(--micromodule) * 40)  }
+.row-41 {  top: calc(var(--micromodule) * 41)  }
+.row-42 {  top: calc(var(--micromodule) * 42)  }
+.row-43 {  top: calc(var(--micromodule) * 43)  }
+.row-44 {  top: calc(var(--micromodule) * 44)  }
+.row-45 {  top: calc(var(--micromodule) * 45)  }
+.row-46 {  top: calc(var(--micromodule) * 46)  }
+.row-47 {  top: calc(var(--micromodule) * 47)  }
+.row-48 {  top: calc(var(--micromodule) * 48)  }
+.row-49 {  top: calc(var(--micromodule) * 49)  }
+.row-50 {  top: calc(var(--micromodule) * 50)  }
+.row-51 {  top: calc(var(--micromodule) * 51)  }
+.row-52 {  top: calc(var(--micromodule) * 52)  }
+.row-53 {  top: calc(var(--micromodule) * 53)  }
+.row-54 {  top: calc(var(--micromodule) * 54)  }
+.row-55 {  top: calc(var(--micromodule) * 55)  }
+.row-56 {  top: calc(var(--micromodule) * 56)  }
+.row-57 {  top: calc(var(--micromodule) * 57)  }
+.row-58 {  top: calc(var(--micromodule) * 58)  }
+.row-59 {  top: calc(var(--micromodule) * 59)  }
+.row-60 {  top: calc(var(--micromodule) * 60)  }
+.row-61 { top: calc(var(--micromodule) * 61) }
+.row-62 { top: calc(var(--micromodule) * 62) }
+.row-63 { top: calc(var(--micromodule) * 63) }
+.row-64 { top: calc(var(--micromodule) * 64) }
+.row-65 { top: calc(var(--micromodule) * 65) }
+.row-66 { top: calc(var(--micromodule) * 66) }
+.row-67 { top: calc(var(--micromodule) * 67) }
+.row-68 { top: calc(var(--micromodule) * 68) }
+.row-69 { top: calc(var(--micromodule) * 69) }
+.row-70 { top: calc(var(--micromodule) * 70) }
+.row-71 { top: calc(var(--micromodule) * 71) }
+.row-72 { top: calc(var(--micromodule) * 72) }
+.row-73 { top: calc(var(--micromodule) * 73) }
+.row-74 { top: calc(var(--micromodule) * 74) }
+.row-75 { top: calc(var(--micromodule) * 75) }
+.row-76 { top: calc(var(--micromodule) * 76) }
+.row-77 { top: calc(var(--micromodule) * 77) }
+.row-78 { top: calc(var(--micromodule) * 78) }
+.row-79 { top: calc(var(--micromodule) * 79) }
+.row-80 { top: calc(var(--micromodule) * 80) }
+.row-81 { top: calc(var(--micromodule) * 81) }
+.row-82 { top: calc(var(--micromodule) * 82) }
+.row-83 { top: calc(var(--micromodule) * 83) }
+.row-84 { top: calc(var(--micromodule) * 84) }
+.row-85 { top: calc(var(--micromodule) * 85) }
+.row-86 { top: calc(var(--micromodule) * 86) }
+.row-87 { top: calc(var(--micromodule) * 87) }
+.row-88 { top: calc(var(--micromodule) * 88) }
+.row-89 { top: calc(var(--micromodule) * 89) }
+.row-90 { top: calc(var(--micromodule) * 90) }
+.row-91 { top: calc(var(--micromodule) * 91) }
+.row-92 { top: calc(var(--micromodule) * 92) }
+.row-93 { top: calc(var(--micromodule) * 93) }
+.row-94 { top: calc(var(--micromodule) * 94) }
+.row-95 { top: calc(var(--micromodule) * 95) }
+.row-96 { top: calc(var(--micromodule) * 96) }
+.row-97 { top: calc(var(--micromodule) * 97) }
+.row-98 { top: calc(var(--micromodule) * 98) }
+.row-99 { top: calc(var(--micromodule) * 99) }
+.row-100 { top: calc(var(--micromodule) * 100) }
+.row-101 { top: calc(var(--micromodule) * 101) }
+.row-102 { top: calc(var(--micromodule) * 102) }
+.row-103 { top: calc(var(--micromodule) * 103) }
+.row-104 { top: calc(var(--micromodule) * 104) }
+.row-105 { top: calc(var(--micromodule) * 105) }
+.row-106 { top: calc(var(--micromodule) * 106) }
+.row-107 { top: calc(var(--micromodule) * 107) }
+.row-108 { top: calc(var(--micromodule) * 108) }
+.row-109 { top: calc(var(--micromodule) * 109) }
+.row-110 { top: calc(var(--micromodule) * 110) }
+.row-111 { top: calc(var(--micromodule) * 111) }
+.row-112 { top: calc(var(--micromodule) * 112) }
+.row-113 { top: calc(var(--micromodule) * 113) }
+.row-114 { top: calc(var(--micromodule) * 114) }
+.row-115 { top: calc(var(--micromodule) * 115) }
+.row-116 { top: calc(var(--micromodule) * 116) }
+.row-117 { top: calc(var(--micromodule) * 117) }
+.row-118 { top: calc(var(--micromodule) * 118) }
+.row-119 { top: calc(var(--micromodule) * 119) }
+.row-120 { top: calc(var(--micromodule) * 120) }
+.row-121 { top: calc(var(--micromodule) * 121) }
+.row-122 { top: calc(var(--micromodule) * 122) }
+.row-123 { top: calc(var(--micromodule) * 123) }
+.row-124 { top: calc(var(--micromodule) * 124) }
+.row-125 { top: calc(var(--micromodule) * 125) }
+.row-126 { top: calc(var(--micromodule) * 126) }
+.row-127 { top: calc(var(--micromodule) * 127) }
+.row-128 { top: calc(var(--micromodule) * 128) }
+.row-129 { top: calc(var(--micromodule) * 129) }
+.row-130 { top: calc(var(--micromodule) * 130) }
+.row-131 { top: calc(var(--micromodule) * 131) }
+.row-132 { top: calc(var(--micromodule) * 132) }
+.row-133 { top: calc(var(--micromodule) * 133) }
+.row-134 { top: calc(var(--micromodule) * 134) }
+.row-135 { top: calc(var(--micromodule) * 135) }
+.row-136 { top: calc(var(--micromodule) * 136) }
+.row-137 { top: calc(var(--micromodule) * 137) }
+.row-138 { top: calc(var(--micromodule) * 138) }
+.row-139 { top: calc(var(--micromodule) * 139) }
+.row-140 { top: calc(var(--micromodule) * 140) }
+.row-141 { top: calc(var(--micromodule) * 141) }
+.row-142 { top: calc(var(--micromodule) * 142) }
+.row-143 { top: calc(var(--micromodule) * 143) }
+.row-144 { top: calc(var(--micromodule) * 144) }
+.row-145 { top: calc(var(--micromodule) * 145) }
+.row-146 { top: calc(var(--micromodule) * 146) }
+.row-147 { top: calc(var(--micromodule) * 147) }
+.row-148 { top: calc(var(--micromodule) * 148) }
+.row-149 { top: calc(var(--micromodule) * 149) }
+.row-150 { top: calc(var(--micromodule) * 150) }
+.row-151 { top: calc(var(--micromodule) * 151) }
+.row-152 { top: calc(var(--micromodule) * 152) }
+.row-153 { top: calc(var(--micromodule) * 153) }
+.row-154 { top: calc(var(--micromodule) * 154) }
+.row-155 { top: calc(var(--micromodule) * 155) }
+.row-156 { top: calc(var(--micromodule) * 156) }
+.row-157 { top: calc(var(--micromodule) * 157) }
+.row-158 { top: calc(var(--micromodule) * 158) }
+.row-159 { top: calc(var(--micromodule) * 159) }
+.row-160 { top: calc(var(--micromodule) * 160) }
+.row-161 { top: calc(var(--micromodule) * 161) }
+.row-162 { top: calc(var(--micromodule) * 162) }
+.row-163 { top: calc(var(--micromodule) * 163) }
+.row-164 { top: calc(var(--micromodule) * 164) }
+.row-165 { top: calc(var(--micromodule) * 165) }
+.row-166 { top: calc(var(--micromodule) * 166) }
+.row-167 { top: calc(var(--micromodule) * 167) }
+.row-168 { top: calc(var(--micromodule) * 168) }
+.row-169 { top: calc(var(--micromodule) * 169) }
+.row-170 { top: calc(var(--micromodule) * 170) }
+.row-171 { top: calc(var(--micromodule) * 171) }
+.row-172 { top: calc(var(--micromodule) * 172) }
+.row-173 { top: calc(var(--micromodule) * 173) }
+.row-174 { top: calc(var(--micromodule) * 174) }
+.row-175 { top: calc(var(--micromodule) * 175) }
+.row-176 { top: calc(var(--micromodule) * 176) }
+.row-177 { top: calc(var(--micromodule) * 177) }
+.row-178 { top: calc(var(--micromodule) * 178) }
+.row-179 { top: calc(var(--micromodule) * 179) }
+.row-180 { top: calc(var(--micromodule) * 180) }
+.row-181 { top: calc(var(--micromodule) * 181) }
+.row-182 { top: calc(var(--micromodule) * 182) }
+.row-183 { top: calc(var(--micromodule) * 183) }
+.row-184 { top: calc(var(--micromodule) * 184) }
+.row-185 { top: calc(var(--micromodule) * 185) }
+.row-186 { top: calc(var(--micromodule) * 186) }
+.row-187 { top: calc(var(--micromodule) * 187) }
+.row-188 { top: calc(var(--micromodule) * 188) }
+.row-189 { top: calc(var(--micromodule) * 189) }
+.row-190 { top: calc(var(--micromodule) * 190) }
+.row-191 { top: calc(var(--micromodule) * 191) }
+.row-192 { top: calc(var(--micromodule) * 192) }
+.row-193 { top: calc(var(--micromodule) * 193) }
+.row-194 { top: calc(var(--micromodule) * 194) }
+.row-195 { top: calc(var(--micromodule) * 195) }
+.row-196 { top: calc(var(--micromodule) * 196) }
+.row-197 { top: calc(var(--micromodule) * 197) }
+.row-198 { top: calc(var(--micromodule) * 198) }
+.row-199 { top: calc(var(--micromodule) * 199) }
+.row-200 { top: calc(var(--micromodule) * 200) }
+.row-201 { top: calc(var(--micromodule) * 201) }
+.row-202 { top: calc(var(--micromodule) * 202) }
+.row-203 { top: calc(var(--micromodule) * 203) }
+.row-204 { top: calc(var(--micromodule) * 204) }
+.row-205 { top: calc(var(--micromodule) * 205) }
+.row-206 { top: calc(var(--micromodule) * 206) }
+.row-207 { top: calc(var(--micromodule) * 207) }
+.row-208 { top: calc(var(--micromodule) * 208) }
+.row-209 { top: calc(var(--micromodule) * 209) }
+.row-210 { top: calc(var(--micromodule) * 210) }
+.row-211 { top: calc(var(--micromodule) * 211) }
+.row-212 { top: calc(var(--micromodule) * 212) }
+.row-213 { top: calc(var(--micromodule) * 213) }
+.row-214 { top: calc(var(--micromodule) * 214) }
+.row-215 { top: calc(var(--micromodule) * 215) }
+.row-216 { top: calc(var(--micromodule) * 216) }
+.row-217 { top: calc(var(--micromodule) * 217) }
+.row-218 { top: calc(var(--micromodule) * 218) }
+.row-219 { top: calc(var(--micromodule) * 219) }
+.row-220 { top: calc(var(--micromodule) * 220) }
+.row-221 { top: calc(var(--micromodule) * 221) }
+.row-222 { top: calc(var(--micromodule) * 222) }
+.row-223 { top: calc(var(--micromodule) * 223) }
+.row-224 { top: calc(var(--micromodule) * 224) }
+.row-225 { top: calc(var(--micromodule) * 225) }
+.row-226 { top: calc(var(--micromodule) * 226) }
+.row-227 { top: calc(var(--micromodule) * 227) }
+.row-228 { top: calc(var(--micromodule) * 228) }
+.row-229 { top: calc(var(--micromodule) * 229) }
+.row-230 { top: calc(var(--micromodule) * 230) }
+.row-231 { top: calc(var(--micromodule) * 231) }
+.row-232 { top: calc(var(--micromodule) * 232) }
+.row-233 { top: calc(var(--micromodule) * 233) }
+.row-234 { top: calc(var(--micromodule) * 234) }
+
+.main-rows {
+  display: grid;
+  position: absolute;
+  top: 0;
+  grid-template-rows: repeat(500, 24px);
+}
+
+#grid { 
+    width: 1192px;
+    position: fixed;
+    left: calc(((100% - 1280px) / 2) + var(--page-margin));
+    height: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 24px;
+}
+
+#grid div {
+  font-size: 5vw;
+  /* border: 1px solid gold; */
+  text-align: center;
+  height: 100%;
+}
+
+
+
+
+
+/* .course-page {
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+} */
+
+.header > .navigtion-circles {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: blue;
+  margin: auto;
+}
+
+.content-wrapper {
+  padding-top: 0;
+  max-width: 85%;
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.opener {
+  padding: 0 44px;
+  border: 1px solid red;
+}
+
+
+.content-wrapper img {
+  max-width: 100%;
+  width: 100%;
+}
+
+.header {
+  padding: 0 44px;
+  height: 96px;
+  background-color: green;
+}
+
+.button {
+  background-color: red;
+  margin-right: 10px;
+}
+
+img {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-family: "Repro Outline";
+    --fm-capitalHeight: .7;
+    --fm-x-height: .53;
+    --fm-emSquare: 1;
+    --fm-descender: 0.16;
+    --fm-ascender: 0.84;
+    --fm-linegap: 0;
+    
+    /* desired capital height and line-height */
+    --capital-height: 48;
+    --line-height: 1;
+
+    --lineheightNormal: (var(--fm-ascender) + var(--fm-descender) + var(--fm-linegap));
+    --distanceBottom: (var(--fm-descender));
+    --distanceTop: (var(--fm-ascender) - var(--fm-x-height));
+    --computedFontSize: (var(--capital-height) / var(--fm-x-height));
+    --valign: ((var(--distanceBottom) - var(--distanceTop)) * var(--computedFontSize));  
+    --computedLineheight: ((var(--line-height) * var(--capital-height)) - var(--valign));
+    --contentArea: (var(--lineheightNormal) * var(--computedFontSize));
+
+  /* set capital height to equal font-size */
+    font-size: calc(var(--computedFontSize) * 1px);
+
+  /* set computed line-height */
+    line-height: calc(var(--computedLineheight) * 1px);
+
+    /* --x-height-corrector: calc((var(--fm-capitalHeight) - var(--fm-x-height)) * 1px); */
+
+    margin-top: calc(96px - ((var(--fm-capitalHeight) - var(--fm-x-height)) * 100px));
+
+}
+
+h2 {  
+    margin: 24px 0 0;
+    font-family: "Repro";
+    font-size: 90px;
+    line-height: .53em;
+    
+}
+
+h3 {
+    font-family: "NF";
+    color: #262626;
+
+    --fm-capitalHeight: .7;
+    --fm-x-height: .53;
+    --fm-emSquare: 1;
+    --fm-descender: 0.16;
+    --fm-ascender: 0.84;
+    --fm-linegap: 0;
+    
+    /* desired capital height and line-height */
+    --capital-height: 48;
+    --line-height: 1;
+
+    --lineheightNormal: (var(--fm-ascender) + var(--fm-descender) + var(--fm-linegap));
+    --distanceBottom: (var(--fm-descender));
+    --distanceTop: (var(--fm-ascender) - var(--fm-x-height));
+    --computedFontSize: (var(--capital-height) / var(--fm-x-height));
+    --valign: ((var(--distanceBottom) - var(--distanceTop)) * var(--computedFontSize));  
+    --computedLineheight: ((var(--line-height) * var(--capital-height)) - var(--valign));
+    --contentArea: (var(--lineheightNormal) * var(--computedFontSize));
+
+  /* set capital height to equal font-size */
+    font-size: calc(var(--computedFontSize) * 1px);
+
+  /* set computed line-height */
+    line-height: calc(var(--computedLineheight) * 1px);
+
+    /* --x-height-corrector: calc((var(--fm-capitalHeight) - var(--fm-x-height)) * 1px); */
+
+    margin-top: calc(25px - ((var(--fm-capitalHeight) - var(--fm-x-height)) * 100px));
+    margin-bottom: 49px;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    font-family: "Repro";
+}
+
+.row-item {
+    display: grid;
+    /* grid-template-columns: 44px 280px 24px 128px 24px 432px 24px 280px 44px; */
+    grid-template-columns: 3% 22% 2% 10% 2% 34% 2% 22% 3%;
+    overflow: visible;
+}
+
+.image-row {
+  display: grid;
+  grid-template-columns: 3% 1fr 3%;
+  overflow: visible;
+}
+
+.filler-9 {
+  display: grid;
+  grid-template-columns: 3% 1fr 3%;
+  grid-template-rows: 48px;
+  overflow: visible;
+}
+
+.first {  grid-template-rows: 600px;  }
+.second {  grid-template-rows: 504px;  }
+.thrid {  grid-template-rows: 768px;  }
+.filler {  grid-template-rows: 90px;  }
+.fourth { 
+    grid-template-columns: 44px 280px 24px 432px 1fr;
+    grid-template-rows: 408px;
+}
+.filler-2 {  
+    grid-template-columns: 1fr;
+    grid-template-rows: 72px;
+    border-bottom: 1px solid #262626;
+    margin-bottom: 24px;
+}
+
+.theme p {
+    font-family: "Repro";
+
+    --fm-capitalHeight: .7;
+    --fm-x-height: .53;
+    --fm-emSquare: 1;
+    --fm-descender: 0.16;
+    --fm-ascender: 0.84;
+    --fm-linegap: 0;
+    
+    /* desired capital height and line-height */
+    --capital-height: 20;
+    --line-height: 2;
+
+    --lineheightNormal: (var(--fm-ascender) + var(--fm-descender) + var(--fm-linegap));
+    --distanceBottom: (var(--fm-descender));
+    --distanceTop: (var(--fm-ascender) - var(--fm-x-height));
+    --computedFontSize: (var(--capital-height) / var(--fm-x-height));
+    --valign: ((var(--distanceBottom) - var(--distanceTop)) * var(--computedFontSize));  
+    --computedLineheight: ((var(--line-height) * var(--capital-height)) - var(--valign));
+    --contentArea: (var(--lineheightNormal) * var(--computedFontSize));
+
+  /* set capital height to equal font-size */
+    font-size: calc(var(--computedFontSize) * 1px);
+
+  /* set computed line-height */
+    line-height: calc(var(--computedLineheight) * 1px);
+
+    /* --x-height-corrector: calc((var(--fm-capitalHeight) - var(--fm-x-height)) * 1px); */
+
+    margin-top: calc((var(--fm-ascender) - var(--fm-x-height)) * -42px);
+}
+
+.day p {
+    font-family: "NF";
+
+    --fm-capitalHeight: .7;
+    --fm-x-height: .53;
+    --fm-emSquare: 1;
+    --fm-descender: 0.16;
+    --fm-ascender: 0.84;
+    --fm-linegap: 0;
+    
+    /* desired capital height and line-height */
+    --capital-height: 68;
+    --line-height: 2;
+
+    --lineheightNormal: (var(--fm-ascender) + var(--fm-descender) + var(--fm-linegap));
+    --distanceBottom: (var(--fm-descender));
+    --distanceTop: (var(--fm-ascender) - var(--fm-x-height));
+    --computedFontSize: (var(--capital-height) / var(--fm-x-height));
+    --valign: ((var(--distanceBottom) - var(--distanceTop)) * var(--computedFontSize));  
+    --computedLineheight: ((var(--line-height) * var(--capital-height)) - var(--valign));
+    --contentArea: (var(--lineheightNormal) * var(--computedFontSize));
+
+  /* set capital height to equal font-size */
+    font-size: calc(var(--computedFontSize) * 1px);
+
+  /* set computed line-height */
+    line-height: calc(var(--computedLineheight) * 1px);
+
+    /* --x-height-corrector: calc((var(--fm-capitalHeight) - var(--fm-x-height)) * 1px); */
+
+    margin-top: -50px;
+}
+
+.goal p {
+    font-family: "Repro";
+
+    --fm-capitalHeight: .7;
+    --fm-x-height: .53;
+    --fm-emSquare: 1;
+    --fm-descender: 0.16;
+    --fm-ascender: 0.84;
+    --fm-linegap: 0;
+    
+    /* desired capital height and line-height */
+    --capital-height: 11;
+    --line-height: 2;
+
+    --lineheightNormal: (var(--fm-ascender) + var(--fm-descender) + var(--fm-linegap));
+    --distanceBottom: (var(--fm-descender));
+    --distanceTop: (var(--fm-ascender) - var(--fm-x-height));
+    --computedFontSize: (var(--capital-height) / var(--fm-x-height));
+    --valign: ((var(--distanceBottom) - var(--distanceTop)) * var(--computedFontSize));  
+    --computedLineheight: ((var(--line-height) * var(--capital-height)) - var(--valign));
+    --contentArea: (var(--lineheightNormal) * var(--computedFontSize));
+
+  /* set capital height to equal font-size */
+    font-size: calc(var(--computedFontSize) * 1px);
+
+  /* set computed line-height */
+    line-height: calc(var(--computedLineheight) * 1px);
+
+    /* --x-height-corrector: calc((var(--fm-capitalHeight) - var(--fm-x-height)) * 1px); */
+
+    margin-top: calc((var(--fm-ascender) - var(--fm-x-height)) * -24px);
+}
+
+.process p {
+    font-family: "Repro";
+
+    --fm-capitalHeight: .7;
+    --fm-x-height: .53;
+    --fm-emSquare: 1;
+    --fm-descender: 0.16;
+    --fm-ascender: 0.84;
+    --fm-linegap: 0;
+    
+    /* desired capital height and line-height */
+    --capital-height: 7;
+    --line-height: 2;
+
+    --lineheightNormal: (var(--fm-ascender) + var(--fm-descender) + var(--fm-linegap));
+    --distanceBottom: (var(--fm-descender));
+    --distanceTop: (var(--fm-ascender) - var(--fm-x-height));
+    --computedFontSize: (var(--capital-height) / var(--fm-x-height));
+    --valign: ((var(--distanceBottom) - var(--distanceTop)) * var(--computedFontSize));  
+    --computedLineheight: ((var(--line-height) * var(--capital-height)) - var(--valign));
+    --contentArea: (var(--lineheightNormal) * var(--computedFontSize));
+
+  /* set capital height to equal font-size */
+    font-size: calc(var(--computedFontSize) * 1px);
+
+  /* set computed line-height */
+    line-height: calc(var(--computedLineheight) * 1px);
+
+    /* --x-height-corrector: calc((var(--fm-capitalHeight) - var(--fm-x-height)) * 1px); */
+
+    margin-top: calc((var(--fm-ascender) - var(--fm-x-height)) * -10px);
+}
+
+.process ul {
+    list-style: none;
+    padding: 0;
+    font-family: "Repro";
+
+    --fm-capitalHeight: .7;
+    --fm-x-height: .53;
+    --fm-emSquare: 1;
+    --fm-descender: 0.16;
+    --fm-ascender: 0.84;
+    --fm-linegap: 0;
+    
+    /* desired capital height and line-height */
+    --capital-height: 7;
+    --line-height: 2;
+
+    --lineheightNormal: (var(--fm-ascender) + var(--fm-descender) + var(--fm-linegap));
+    --distanceBottom: (var(--fm-descender));
+    --distanceTop: (var(--fm-ascender) - var(--fm-x-height));
+    --computedFontSize: (var(--capital-height) / var(--fm-x-height));
+    --valign: ((var(--distanceBottom) - var(--distanceTop)) * var(--computedFontSize));  
+    --computedLineheight: ((var(--line-height) * var(--capital-height)) - var(--valign));
+    --contentArea: (var(--lineheightNormal) * var(--computedFontSize));
+
+  /* set capital height to equal font-size */
+    font-size: calc(var(--computedFontSize) * 1px);
+
+  /* set computed line-height */
+    line-height: calc(var(--computedLineheight) * 1px);
+
+    /* --x-height-corrector: calc((var(--fm-capitalHeight) - var(--fm-x-height)) * 1px); */
+
+    margin-top: calc((var(--fm-ascender) - var(--fm-x-height)) * -10px);
+}
+
+.curator .row-item {
+    grid-template-columns: 44px 304px 324px 1fr;
+    grid-template-rows: 144px;
+}
+
+.curator img {
+    width: 120px;
+    height: 120px;
+}
+
+.curator p {
+    padding: 24px 0 0;
+}
+
+.curator-name {
+    font-family: "Repro";
+
+    --fm-capitalHeight: .7;
+    --fm-x-height: .53;
+    --fm-emSquare: 1;
+    --fm-descender: 0.16;
+    --fm-ascender: 0.84;
+    --fm-linegap: 0;
+    
+    /* desired capital height and line-height */
+    --capital-height: 11;
+    --line-height: 2;
+
+    --lineheightNormal: (var(--fm-ascender) + var(--fm-descender) + var(--fm-linegap));
+    --distanceBottom: (var(--fm-descender));
+    --distanceTop: (var(--fm-ascender) - var(--fm-x-height));
+    --computedFontSize: (var(--capital-height) / var(--fm-x-height));
+    --valign: ((var(--distanceBottom) - var(--distanceTop)) * var(--computedFontSize));  
+    --computedLineheight: ((var(--line-height) * var(--capital-height)) - var(--valign));
+    --contentArea: (var(--lineheightNormal) * var(--computedFontSize));
+
+  /* set capital height to equal font-size */
+    font-size: calc(var(--computedFontSize) * 1px);
+
+  /* set computed line-height */
+    line-height: calc(var(--computedLineheight) * 1px);
+
+    /* --x-height-corrector: calc((var(--fm-capitalHeight) - var(--fm-x-height)) * 1px); */
+
+    margin-top: calc((var(--fm-ascender) - var(--fm-x-height)) * -24px);
+}
+
+.profile {
+    font-family: "Repro";
+
+    --fm-capitalHeight: .7;
+    --fm-x-height: .53;
+    --fm-emSquare: 1;
+    --fm-descender: 0.16;
+    --fm-ascender: 0.84;
+    --fm-linegap: 0;
+    
+    /* desired capital height and line-height */
+    --capital-height: 7;
+    --line-height: 2;
+
+    --lineheightNormal: (var(--fm-ascender) + var(--fm-descender) + var(--fm-linegap));
+    --distanceBottom: (var(--fm-descender));
+    --distanceTop: (var(--fm-ascender) - var(--fm-x-height));
+    --computedFontSize: (var(--capital-height) / var(--fm-x-height));
+    --valign: ((var(--distanceBottom) - var(--distanceTop)) * var(--computedFontSize));  
+    --computedLineheight: ((var(--line-height) * var(--capital-height)) - var(--valign));
+    --contentArea: (var(--lineheightNormal) * var(--computedFontSize));
+
+  /* set capital height to equal font-size */
+    font-size: calc(var(--computedFontSize) * 1px);
+
+  /* set computed line-height */
+    line-height: calc(var(--computedLineheight) * 1px);
+
+    /* --x-height-corrector: calc((var(--fm-capitalHeight) - var(--fm-x-height)) * 1px); */
+
+    margin-top: calc((var(--fm-ascender) - var(--fm-x-height)) * -10px);
+}
+
+.tab-line svg {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    color: #262626
+}
+
+ul {  list-style: none  }
+
+footer {
+    background: #262626;
+    padding: 0;
+    height: 408px;
+}
+
+footer p {
+    padding-top: 48px;
+
+    font-family: "Repro";
+
+    --fm-capitalHeight: .7;
+    --fm-x-height: .53;
+    --fm-emSquare: 1;
+    --fm-descender: 0.16;
+    --fm-ascender: 0.84;
+    --fm-linegap: 0;
+    
+    /* desired capital height and line-height */
+    --capital-height: 16;
+    --line-height: 1.6;
+
+    --lineheightNormal: (var(--fm-ascender) + var(--fm-descender) + var(--fm-linegap));
+    --distanceBottom: (var(--fm-descender));
+    --distanceTop: (var(--fm-ascender) - var(--fm-x-height));
+    --computedFontSize: (var(--capital-height) / var(--fm-x-height));
+    --valign: ((var(--distanceBottom) - var(--distanceTop)) * var(--computedFontSize));  
+    --computedLineheight: ((var(--line-height) * var(--capital-height)) - var(--valign));
+    --contentArea: (var(--lineheightNormal) * var(--computedFontSize));
+
+  /* set capital height to equal font-size */
+    font-size: calc(var(--computedFontSize) * 1px);
+
+  /* set computed line-height */
+    line-height: calc(var(--computedLineheight) * 1px);
+
+    /* --x-height-corrector: calc((var(--fm-capitalHeight) - var(--fm-x-height)) * 1px); */
+
+    margin-top: calc((var(--fm-ascender) - var(--fm-x-height)) * -26px);
+}
