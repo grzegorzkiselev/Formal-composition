@@ -601,22 +601,19 @@ h3 {
   display: grid;
   grid-template-columns: 3% minmax(280px, 280px) 2% minmax(72px,128px) 2% minmax(195px,432px) 2% minmax(155px, 280px) 3%;
   overflow: hidden;
-  grid-template-rows: minmax(auto, auto) 48px;
+  grid-template-rows: auto 48px;
 }
 
-img {
-    padding: 0;
-    margin: 0;
-}
 
-.content-wrapper iframe {
-  cursor: pointer;
+
+video {
   grid-row: 1;
   grid-column: 2/9;
-  max-width: 100%;
+  height: auto;
   width: 100%;
-  border: none;
 }
+
+
 
 .left {
   grid-column: 1/2;
@@ -814,8 +811,10 @@ img {
   /* background-color: red; */
   margin-top: 36px;
   margin-bottom: 48px;
-  height: max-content;
+  background-color: blue;
 }
+
+
 
 .b-input-block .i-question-control {
   padding: 10px 0 !important;
